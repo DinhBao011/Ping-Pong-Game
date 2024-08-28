@@ -1,0 +1,11 @@
+// Phương trình liên kết tất cả các biến:
+    2(wallGap) + n(brickWitdh) + (n-1)(brickGap) = 2
+
+// với n là các brick có trên screen
+
+// Từ phương trình liên kết, ta có thể tìm ra khoảng trống từ bức tường đến viên gạch đầu tiên
+    -> 2(wallGap) = 2 - n(brickWitdh) - (n-1)(brickGap)
+    <=> wallGap = 1/2 * [2 - n(brickWitdh) - (n-1)(brickGap)]
+
+// Từ wallGap tính được ở trên => điểm bắt đầu tạo nên viên gạch đầu tiên
+    firstBrickX = -1 + wallGap
